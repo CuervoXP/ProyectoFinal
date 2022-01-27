@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Tipografias-->
+    <!--Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!--Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Outfit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <img src="img/menu.png" alt="">
+            <a href="#"><img src="img/carrito-de-compras.png" alt=""></a>
+        </label>
+        <div class="menu">
+            <div class="space-evenly">
+                <div class="Logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="selected">INICIO</a></li>
+                    <li><a href="calzas.html">CALZAS</a></li>
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">MI CUENTA</a></li>
+                    <li><a href="#">SOBRE NOSOTROS</a></li>
+
+                </ul>
+                <a href="carrito.html"><img src="img/carrito-de-compras2.png" alt="carrito-de-compras"></a>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <div class="novedades">
+        <div class="titulo-novedades">
+            <h2>NOVEDADES</h2>
+        </div>
+
+    </div>
+
+    <div class="contenedor1" id="cards">
+        <template id="template-card">
+            <div class="card">
+                <img src="" alt="">
+                <h4>Titulo</h4>
+                <p>100</p>
+
+
+                <button id="boton" class="boton">AGREGAR</button>
+
+            </div>
+        </template>
+    </div>
+
+    <div id="main-container">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Sumar/Restar</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="items">
+
+            </tbody>
+        </table>
+    </div>
+    <template id="template-carrito">
+        <tr>
+            <th>id</th>
+            <td>nombre</td>
+            <td>cantidad</td>
+            <td>
+                <button id="boton-sumar" class="sumar">+</button><button id="boton-restar" class="restar">-</button>
+            </td>
+            <td>$ <span>500</span></td>
+        </tr>
+    </template>
+
+    </section>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="footer-columnas">
+                <h2>Navegación</h2>
+                <div class="width-footer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente architecto voluptate
+                        dignissimos maxime autem sunt</p>
+                </div>
+
+            </div>
+            <div class="footer-columnas">
+                <h2>Redes sociales</h2>
+                <div class="width-footer-text">
+                    <div class="footer-row">
+                        <img src="img/Redes/facebook.png" alt="calzas-facebook">
+                        <a href="#">
+                            <p>Seguir en Facebook</p>
+                        </a>
+                    </div>
+                    <div class="footer-row">
+                        <img src="img/Redes/instagram.png" alt="calzas-instagram">
+                        <a href="#">
+                            <p>Seguir en Instagram</p>
+                        </a>
+                    </div>
+                    <div class="footer-row">
+                        <img src="img/Redes/gorjeo.png" alt="calzas-twitter">
+                        <a href="#">
+                            <p>Seguir en Twitter</p>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-columnas">
+                <h2>Contacto</h2>
+                <div class="width-footer-text">
+                    <p>Mail: matibrian05@gmail.com</p>
+                    Tel: +54 11 2482 7992
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
